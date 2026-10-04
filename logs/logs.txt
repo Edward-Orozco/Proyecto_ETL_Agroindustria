@@ -1,0 +1,68 @@
+2026-10-04 16:42:26.732761 - INFO - Iniciando la extracción
+2026-10-04 16:42:26.818056 - INFO - Fuente 'eam_2024' extraída: 6583 filas, 10 columnas
+2026-10-04 16:42:27.018582 - INFO - Fuente 'eam_2021' extraída: 7138 filas, 10 columnas
+2026-10-04 16:42:27.030145 - INFO - ERROR extrayendo 'edit_innovacion': `Import openpyxl` failed.  Use pip or conda to install the openpyxl package.
+2026-10-04 16:42:27.036762 - INFO - ERROR extrayendo 'edit_inversion': `Import openpyxl` failed.  Use pip or conda to install the openpyxl package.
+2026-10-04 16:42:27.044710 - INFO - ERROR extrayendo 'tic_industria': `Import openpyxl` failed.  Use pip or conda to install the openpyxl package.
+2026-10-04 16:42:27.046256 - INFO - Extracción finalizada: 2 de 5 fuentes
+2026-10-04 16:43:08.050411 - INFO - Iniciando la extracción
+2026-10-04 16:43:08.132846 - INFO - Fuente 'eam_2024' extraída: 6583 filas, 10 columnas
+2026-10-04 16:43:08.244267 - INFO - Fuente 'eam_2021' extraída: 7138 filas, 10 columnas
+2026-10-04 16:43:08.249425 - INFO - ERROR extrayendo 'edit_innovacion': `Import openpyxl` failed.  Use pip or conda to install the openpyxl package.
+2026-10-04 16:43:08.252759 - INFO - ERROR extrayendo 'edit_inversion': `Import openpyxl` failed.  Use pip or conda to install the openpyxl package.
+2026-10-04 16:43:08.255372 - INFO - ERROR extrayendo 'tic_industria': `Import openpyxl` failed.  Use pip or conda to install the openpyxl package.
+2026-10-04 16:43:08.255949 - INFO - Extracción finalizada: 2 de 5 fuentes
+2026-10-04 16:45:19.086589 - INFO - Iniciando la extracción
+2026-10-04 16:45:19.214887 - INFO - Fuente 'eam_2024' extraída: 6583 filas, 10 columnas
+2026-10-04 16:45:19.375005 - INFO - Fuente 'eam_2021' extraída: 7138 filas, 10 columnas
+2026-10-04 16:45:20.264412 - INFO - Fuente 'edit_innovacion' extraída: 60 filas, 9 columnas
+2026-10-04 16:45:20.547871 - INFO - Fuente 'edit_inversion' extraída: 53 filas, 30 columnas
+2026-10-04 16:45:20.731641 - INFO - Fuente 'tic_industria' extraída: 17 filas, 4 columnas
+2026-10-04 16:45:20.732696 - INFO - Extracción finalizada: 5 de 5 fuentes
+2026-10-04 17:26:45.632204 - INFO - Iniciando la extracción
+2026-10-04 17:26:45.728488 - INFO - Fuente 'eam_2024' extraída: 6583 filas, 10 columnas
+2026-10-04 17:26:45.885967 - INFO - Fuente 'eam_2021' extraída: 7138 filas, 10 columnas
+2026-10-04 17:26:46.603754 - INFO - Fuente 'edit_innovacion' extraída: 60 filas, 9 columnas
+2026-10-04 17:26:47.051289 - INFO - Fuente 'edit_inversion' extraída: 53 filas, 30 columnas
+2026-10-04 17:26:47.259479 - INFO - Fuente 'tic_industria' extraída: 17 filas, 4 columnas
+2026-10-04 17:26:47.260372 - INFO - Extracción finalizada: 5 de 5 fuentes
+2026-10-04 17:26:47.260996 - INFO - Iniciando la transformación silver
+2026-10-04 17:26:47.447387 - INFO - Silver 'eam_agro' guardada: 2667 filas, 13 columnas
+2026-10-04 17:26:47.459760 - INFO - Silver 'edit_inversion' guardada: 9 filas, 10 columnas
+2026-10-04 17:26:47.472511 - INFO - Silver 'edit_innovacion' guardada: 9 filas, 6 columnas
+2026-10-04 17:26:47.484541 - INFO - Silver 'tic_industria' guardada: 10 filas, 4 columnas
+2026-10-04 17:26:47.487309 - INFO - Calidad: 195 establecimientos sin personal ocupado (excluidos de productividad)
+2026-10-04 17:41:06.708265 - INFO - Iniciando la extracción
+2026-10-04 17:41:06.774574 - INFO - Fuente 'eam_2024' extraída: 6583 filas, 10 columnas
+2026-10-04 17:41:06.880210 - INFO - Fuente 'eam_2021' extraída: 7138 filas, 10 columnas
+2026-10-04 17:41:07.512010 - INFO - Fuente 'edit_innovacion' extraída: 60 filas, 9 columnas
+2026-10-04 17:41:07.763497 - INFO - Fuente 'edit_inversion' extraída: 53 filas, 30 columnas
+2026-10-04 17:41:07.875202 - INFO - Fuente 'tic_industria' extraída: 17 filas, 4 columnas
+2026-10-04 17:41:07.875704 - INFO - Extracción finalizada: 5 de 5 fuentes
+2026-10-04 17:41:07.876145 - INFO - Iniciando la transformación silver
+2026-10-04 17:41:07.991021 - INFO - Silver 'eam_agro' guardada: 2667 filas, 13 columnas
+2026-10-04 17:41:07.996193 - INFO - Silver 'edit_inversion' guardada: 9 filas, 10 columnas
+2026-10-04 17:41:08.004786 - INFO - Silver 'edit_innovacion' guardada: 9 filas, 6 columnas
+2026-10-04 17:41:08.012416 - INFO - Silver 'tic_industria' guardada: 10 filas, 4 columnas
+2026-10-04 17:41:08.013805 - INFO - Calidad: 195 establecimientos sin personal ocupado (excluidos de productividad)
+2026-10-04 17:41:08.014824 - INFO - Iniciando la integración gold
+2026-10-04 17:41:08.117512 - INFO - Validación gold: {'filas': 18, 'cobertura_grupos_pct': 100.0, 'celdas_nulas': 0, 'duplicados_llave': 0}
+2026-10-04 17:41:08.134025 - INFO - Gold guardada: 18 filas, 21 columnas
+2026-10-04 17:41:08.134566 - INFO - Pipeline finalizado
+2026-10-04 17:51:50.356148 - INFO - Iniciando la extracción
+2026-10-04 17:51:50.418954 - INFO - Fuente 'eam_2024' extraída: 6583 filas, 10 columnas
+2026-10-04 17:51:50.508458 - INFO - Fuente 'eam_2021' extraída: 7138 filas, 10 columnas
+2026-10-04 17:51:50.999808 - INFO - Fuente 'edit_innovacion' extraída: 60 filas, 9 columnas
+2026-10-04 17:51:51.213724 - INFO - Fuente 'edit_inversion' extraída: 53 filas, 30 columnas
+2026-10-04 17:51:51.308430 - INFO - Fuente 'tic_industria' extraída: 17 filas, 4 columnas
+2026-10-04 17:51:51.308871 - INFO - Extracción finalizada: 5 de 5 fuentes
+2026-10-04 17:51:51.309615 - INFO - Iniciando la transformación silver
+2026-10-04 17:51:51.418413 - INFO - Silver 'eam_agro' guardada: 2667 filas, 13 columnas
+2026-10-04 17:51:51.427025 - INFO - Silver 'edit_inversion' guardada: 9 filas, 10 columnas
+2026-10-04 17:51:51.434238 - INFO - Silver 'edit_innovacion' guardada: 9 filas, 6 columnas
+2026-10-04 17:51:51.441355 - INFO - Silver 'tic_industria' guardada: 10 filas, 4 columnas
+2026-10-04 17:51:51.443996 - INFO - Calidad: 195 establecimientos sin personal ocupado (excluidos de productividad)
+2026-10-04 17:51:51.445484 - INFO - Iniciando la integración gold
+2026-10-04 17:51:51.534469 - INFO - Validación gold: {'filas': 18, 'cobertura_grupos_pct': 100.0, 'celdas_nulas': 0, 'duplicados_llave': 0}
+2026-10-04 17:51:51.546544 - INFO - Gold guardada: 18 filas, 21 columnas
+2026-10-04 17:51:51.546976 - INFO - Pipeline finalizado

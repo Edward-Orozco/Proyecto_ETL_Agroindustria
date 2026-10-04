@@ -1,0 +1,46 @@
+project:
+  name: proyecto_etl_agroindustria
+  version: 1.0
+  description: Pipeline ETL para medir digitalización y productividad de la agroindustria colombiana con datos del DANE.
+  author: Edward Andres Orozco
+  date: 2026-10-04
+
+path:
+  bronze_dir: data/bronze
+  silver_dir: data/silver
+  gold_dir: data/gold
+  logs_file: logs/logs.txt
+  notebooks_dir: notebooks
+
+sources:
+  eam_2024:
+    path: data/bronze/eam/EAM_ANONIMIZADA_2024.dta
+    file_type: stata
+    anio: 2024
+
+  eam_2021:
+    path: data/bronze/eam/EAM_ANONIMIZADA_2021.csv
+    file_type: csv
+    anio: 2021
+
+  edit_innovacion:
+    path: data/bronze/edit/anexo_EDIT_Manufacturera_2019_2020.xlsx
+    file_type: excel
+    sheet: C.1.1
+    header_row: 9
+
+  edit_inversion:
+    path: data/bronze/edit/anexo_EDIT_Manufacturera_2019_2020.xlsx
+    file_type: excel
+    sheet: C.2.1
+    header_row: 9
+
+  tic_industria:
+    path: data/bronze/tic_empresas/anex-TIC-Empresas-2024.xlsx
+    file_type: excel
+    sheet: C.1
+    header_row: 13
+
+constant:
+  grupos_agro: [101, 102, 103, 104, 105, 106, 107, 108, 109]
+  columnas_eam: [nordemp, nordest, dpto, ciiu4, periodo, PERSOCU, PRODBR2, VALAGRI, VALORVEN, INVEBRTA]
