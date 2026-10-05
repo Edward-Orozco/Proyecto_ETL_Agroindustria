@@ -3,6 +3,8 @@ project:
   version: 1.0
   description: Pipeline ETL para medir digitalización y productividad de la agroindustria colombiana con datos del DANE.
   author: Edward Andres Orozco
+  license: MIT
+  repository: https://github.com/Edward-Orozco/Proyecto_ETL_Agroindustria
   date: 2026-10-04
 
 path:
