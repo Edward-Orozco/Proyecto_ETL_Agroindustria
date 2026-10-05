@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor = "#2E7D32"             # botones, filtros, pestaña activa
+backgroundColor = "#F4F8F2"          # fondo de la página principal
+secondaryBackgroundColor = "#E3EEDD" # fondo de la barra lateral y las tablas
+textColor = "#1F2A1F"                # color del texto
+font = "sans serif"
