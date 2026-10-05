@@ -66,3 +66,28 @@
 2026-10-04 17:51:51.534469 - INFO - Validación gold: {'filas': 18, 'cobertura_grupos_pct': 100.0, 'celdas_nulas': 0, 'duplicados_llave': 0}
 2026-10-04 17:51:51.546544 - INFO - Gold guardada: 18 filas, 21 columnas
 2026-10-04 17:51:51.546976 - INFO - Pipeline finalizado
+2026-10-05 15:24:27.788032 - INFO - Iniciando la extracción
+2026-10-05 15:24:27.868249 - INFO - Fuente 'eam_2024' extraída: 6583 filas, 10 columnas
+2026-10-05 15:24:27.980648 - INFO - Fuente 'eam_2021' extraída: 7138 filas, 10 columnas
+2026-10-05 15:24:28.786697 - INFO - Fuente 'edit_innovacion' extraída: 60 filas, 9 columnas
+2026-10-05 15:24:29.083401 - INFO - Fuente 'edit_inversion' extraída: 53 filas, 30 columnas
+2026-10-05 15:24:29.232954 - INFO - Fuente 'tic_industria' extraída: 17 filas, 4 columnas
+2026-10-05 15:24:29.233773 - INFO - Extracción finalizada: 5 de 5 fuentes
+2026-10-05 15:24:29.234310 - INFO - Iniciando la transformación silver
+2026-10-05 15:24:29.358988 - INFO - Silver 'eam_agro' guardada: 2667 filas, 13 columnas
+2026-10-05 15:24:29.365192 - INFO - Silver 'edit_inversion' guardada: 9 filas, 10 columnas
+2026-10-05 15:24:29.369346 - INFO - Silver 'edit_innovacion' guardada: 9 filas, 6 columnas
+2026-10-05 15:24:29.373751 - INFO - Silver 'tic_industria' guardada: 10 filas, 4 columnas
+2026-10-05 15:24:29.374899 - INFO - Calidad: 195 establecimientos sin personal ocupado (excluidos de productividad)
+2026-10-05 15:24:29.375437 - INFO - Iniciando la integración gold
+2026-10-05 15:24:29.460199 - INFO - Validación gold: {'filas': 18, 'cobertura_grupos_pct': 100.0, 'celdas_nulas': 0, 'duplicados_llave': 0}
+2026-10-05 15:24:29.504584 - INFO - Gold guardada: 18 filas, 21 columnas
+2026-10-05 15:24:29.506230 - INFO - Iniciando la carga en PostgreSQL
+2026-10-05 15:24:30.818109 - INFO - PostgreSQL 'dim_subsector': 9 de 9 filas
+2026-10-05 15:24:30.819852 - INFO - PostgreSQL 'dim_departamento': 33 de 33 filas
+2026-10-05 15:24:30.821396 - INFO - PostgreSQL 'dim_tiempo': 2 de 2 filas
+2026-10-05 15:24:30.823016 - INFO - PostgreSQL 'fact_establecimiento': 2667 de 2667 filas
+2026-10-05 15:24:30.824562 - INFO - PostgreSQL 'fact_subsector_anio': 18 de 18 filas
+2026-10-05 15:24:30.826108 - INFO - PostgreSQL 'fact_tecnologia_subsector': 9 de 9 filas
+2026-10-05 15:24:30.827758 - INFO - PostgreSQL 'ref_tic_nacional': 10 de 10 filas
+2026-10-05 15:24:30.829132 - INFO - Pipeline finalizado

@@ -11,6 +11,7 @@ import src.transform.clean_eam as clean_eam
 import src.transform.clean_anexos as clean_anexos
 import src.transform.gold_data as gold_data
 import src.load.save_files as save
+import src.load.load_postgres as pg
 
 # Carpeta raíz del proyecto (donde está este main.py)
 BASE_DIR = Path(__file__).resolve().parent
@@ -97,6 +98,23 @@ def main():
     save.guardar_csv(gold, gold_dir, "gold_agroindustria")
     save.guardar_csv(silver["tic_industria"], gold_dir, "referencia_tic_nacional")
     escribir_log(f"Gold guardada: {gold.shape[0]} filas, {gold.shape[1]} columnas", ruta_log)
+    
+    # 6. Carga en PostgreSQL (modelo estrella)
+    escribir_log("Iniciando la carga en PostgreSQL", ruta_log)
+    try:
+        engine = pg.crear_conexion()
+        pg.crear_esquema(engine, BASE_DIR / config["path"]["sql_schema"])
+        tablas = pg.construir_tablas(silver, gold, config["constant"]["nombres_subsector"], config["constant"]["departamentos"])
+        conteos = pg.cargar_tablas(engine, tablas)
+
+        # Validación: filas en la base = filas en los DataFrames
+        for nombre, df in tablas.items():
+            estado = "INFO" if conteos[nombre] == len(df) else "ERROR"
+            escribir_log(f"PostgreSQL '{nombre}': {conteos[nombre]} de {len(df)} filas", ruta_log, estado)
+    except Exception as error:
+        print(f"Error en la carga a PostgreSQL: {error}")
+        escribir_log(f"Carga PostgreSQL: {error}", ruta_log, "ERROR")
+
     escribir_log("Pipeline finalizado", ruta_log)
 
 if __name__ == "__main__":
